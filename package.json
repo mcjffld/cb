@@ -3,11 +3,19 @@
   "version": "0.0.0",
   "main": "server/app.js",
   "dependencies": {
-    "express": "~4.0.0",
-    "littlebits-cloud-http": "git://github.com/littlebits/cloud-client-api-http"
+    "body-parser": "^1.10.0",
+    "compression": "^1.2.2",
+    "cookie-parser": "^1.3.3",
+    "ejs": "^1.0.0",
+    "errorhandler": "^1.3.0",
+    "express": "~3.4.0",
+    "littlebits-cloud-http": "git://github.com/littlebits/cloud-client-api-http",
+    "lodash": "^2.4.1",
+    "method-override": "^2.3.0",
+    "morgan": "^1.5.0",
+    "serve-favicon": "^2.2.0"
   },
-  "devDependencies": {
-  },
+  "devDependencies": {},
   "engines": {
     "node": ">=0.10.0"
   },
