@@ -20,7 +20,7 @@ var serverIP = process.env.OPENSHIFT_NODEJS_IP || '127.0.0.1';
 
 // Start server
 server.listen(serverPort, serverIP, function () {
-  console.log('Express server listening on %d, in %s mode', config.port, app.get('env'));
+  console.log('Express server listening on %d, in %s mode', serverPort, app.get('env'));
 });
 
 // Expose app
