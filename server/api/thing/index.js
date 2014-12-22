@@ -2,14 +2,15 @@
 
 var express = require('express');
 
-console.log (express);
-
 var controller = require('./thing.controller');
 
-var router = express();
+var router = express.Router();
 
-router.get('/', controller.index);
-router.get('/up', controller.up);
-router.get('/down', controller.down);
-
+if (router) {
+  router.get('/', controller.index);
+  router.get('/up', controller.up);
+  router.get('/down', controller.down);
+} else {
+  console.log ('no router ... ');
+}
 module.exports = router;
