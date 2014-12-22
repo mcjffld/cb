@@ -6,7 +6,7 @@ console.log (express);
 
 var controller = require('./thing.controller');
 
-var router = express.Router();
+var router = express();
 
 router.get('/', controller.index);
 router.get('/up', controller.up);
