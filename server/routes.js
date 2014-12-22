@@ -8,7 +8,7 @@ var errors = require('./components/errors');
 
 var express = require('express');
 
-var controller = require('./api/thing.controller');
+var controller = require('./api/thing/thing.controller');
 
 var router = express.Router();
 
