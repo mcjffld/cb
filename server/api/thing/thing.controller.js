@@ -69,6 +69,9 @@ exports.up = function(req, res) {
   update();
   res.json({currentValue: currentValue});
 };
+exports.status = function(req, res) {
+  res.json({currentValue: currentValue});
+};
 exports.down = function(req, res) {
   currentValue -=delta;
   update();
