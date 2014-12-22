@@ -26,7 +26,6 @@ module.exports = function(app) {
   app.use(bodyParser.json());
   app.use(methodOverride());
   app.use(cookieParser());
-  app.use(require('connect-livereload')());
   app.use(express.static(path.join(config.root, '.tmp')));
   app.use(express.static(path.join(config.root, 'client')));
   app.set('appPath', 'client');
